@@ -463,3 +463,111 @@ body{
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 1);
 }
+.footer_container{
+    background-color: rgba(37, 38, 65, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    padding-top: 80px;
+    justify-content: space-around;
+    gap: 50px;
+}
+.footer_logo{
+    display: flex;
+    align-items: center;
+}
+.footer_logo div{
+    width: 180px;
+    height: 35px;
+    padding:0px 20px;
+    line-height: 1.2;
+}
+.footer_logo_name{
+    border-right: 1px solid rgba(98, 99, 129, 1);
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: rgba(255, 255, 255, 1);
+}
+.footer_logo div span{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: rgba(255, 255, 255, 1);
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer_middle_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.middle p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: center;
+    color: rgba(178, 179, 207, 1);
+}
+.mail{
+    width: 400px;
+    height: 60px;
+    opacity: 1;
+    border-radius: 80px;
+    border: 1px solid rgba(131, 131, 154, 1);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color:rgba(131, 131, 154, 1);
+}
+.footer_middle_content button{
+    width: 179px;
+    height: 60px;
+    opacity: 1;
+    border-radius: 60px;
+    background-color: rgba(73, 187, 189, 1);
+    border: none;
+
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%; 
+    color: rgba(255, 255, 255, 1);
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.links a,span{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: center;
+    color: rgba(178, 179, 207, 1);
+    text-decoration: none;
+}
+.copy_right p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-align: center;
+    color:rgba(178, 179, 207, 1) ;
+    margin-top: 20px;
+}
