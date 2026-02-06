@@ -357,6 +357,9 @@ body{
     align-items: center;
     gap: 15px;
 }
+.footer_image span{
+    color: rgba(0, 0, 0, 1);
+}
 .courses_price{
     font-family: 'Poppins';
     font-weight: 700;
