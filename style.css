@@ -13,11 +13,13 @@ body{
 .container{
     width: 100%;
     min-height: 100vh;
+    margin: 0 auto;
 }
 
 
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 25px 40px;
@@ -58,6 +60,8 @@ body{
     gap: 10px;
     font-weight: 500;
     font-size: 18px;
+}
+.profile span{
     color: #000;
 }
 
@@ -107,6 +111,7 @@ body{
 
 .cards-box{
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 30px;
     justify-content: center;
 }
@@ -185,7 +190,7 @@ body{
 
 .categories_container{
     padding: 30px 50px;
-    margin-left: 50px;
+    margin:0 auto;
 }
 
 .categories_heading {
@@ -201,8 +206,8 @@ body{
 .categories_cards{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content:space-around;
 }
 
 
@@ -367,6 +372,8 @@ body{
     line-height: 100%;
     letter-spacing: 2%;
     vertical-align: middle;
+}
+.actual_amount{
     color:rgba(73, 187, 189, 1);
 }
 .cutted_price{
@@ -394,13 +401,15 @@ body{
 }
 .course_choice_container{
     width: 100%;
-    padding: 30px 50px;
+    padding: 70px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 .course_choice_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 12px;
     margin-bottom: 35px;
     padding: 3px;
 }
@@ -429,21 +438,21 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 30px;
+    gap: 32px;
     padding: 50px 160px;
     margin:40px 90px;
 }
 .button_container h3{
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 100%;
     letter-spacing: 0%;
 }
 .button_container p{
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 180%;
     letter-spacing: 2%;
     text-align: center;
@@ -510,6 +519,7 @@ body{
 }
 .footer_middle_content{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 15px;
@@ -524,7 +534,8 @@ body{
     color: rgba(178, 179, 207, 1);
 }
 .mail{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 60px;
     opacity: 1;
     border-radius: 80px;
@@ -574,3 +585,206 @@ body{
     color:rgba(178, 179, 207, 1) ;
     margin-top: 20px;
 }
+
+@media(max-width:1024px){
+    .cards-box{
+        flex-wrap: wrap;
+    }
+
+    .button_container{
+        gap: 20px;
+        padding: 25px 80px;
+        margin:30px 60px;
+    }
+    .button_container h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    .button_container p{
+        font-size: 21px;
+    }
+   
+}
+
+@media(max-width:795px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
+    .box{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+    }
+    .nav-links{
+        gap: 8px;
+    }
+    .nav-links a{
+        font-size: 12px;
+    }
+    .profile{
+        gap: 5px;
+    }
+    .profile span{
+        font-size: 15px;
+
+    }
+    .profile_img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    } 
+
+
+
+    .button_container{
+        margin: 40px 20px;
+    }
+     .welcome_container{
+        padding: 30px 20px;
+        gap: 15px;
+    }
+    .welcome_header{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .welcome_header h2{
+        font-size: 20px;
+        padding: 0px;
+    }
+    .welcome_header a{
+        margin-left: auto;
+        font-size: 14px;
+    }
+    .cards-box{
+        padding: 0px 10px;
+    }
+
+    .categories_heading{
+        font-size: 20px;
+        padding: 0px;
+    }
+    .categories_container{
+        padding: 30px 20px;
+        gap: 15px;
+        margin: 0 auto;
+    }
+    .courses_header{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .courses_heading{
+        font-size: 20px;
+        padding: 0px;
+    }
+    .see{
+        margin-left: auto;
+        font-size: 14px;
+    }
+    .recommended_container{
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    .course_choice_header h3{
+        font-size: 20px;
+        padding: 0px;
+        margin-right: auto;
+    }
+    .course_choice_header span{
+        margin-left: auto;
+        font-size: 14px;
+    }
+    .course_choice_header{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0px;
+    }
+    .course_choice_container{
+        padding: 30px 20px;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+
+
+    .button_container{
+        gap: 10px;
+        padding: 30px 20px;
+        margin:10px 30px;
+    }
+    .button_container h3{
+        font-size: 18px;
+        text-align: center;
+    }
+    .button_container p{
+        font-size: 13px;
+    }
+     .button{
+        padding: 5px;
+        width: 160px;
+        height: 40px;
+        margin-top: 5px; 
+            /* for button content */
+        font-size: 13px;
+    }
+
+    .footer_container{
+        padding: 25px;
+        padding-top: 40px;
+        gap: 45px;
+    }
+    
+    .middle{
+        gap: 15px;
+    }
+    .footer_middle_content{
+        gap: 15px;
+    }
+    .middle p{
+        font-size: 22px;
+    }
+    .mail{
+        height: 55px;
+        padding-left: 30px;
+    }
+    .footer_middle_content button{
+        width: 155px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .links{
+        gap: 10px;
+    }
+    .links a,span{
+        font-size: 17px;
+    }
+    .copy_right p{
+        font-size: 19px;
+        margin-top: 15px;
+    }
+
+
+
+    .footer_logo div{
+        width: 150px;
+        height: 35px;
+        padding:0px 20px;
+    }
+    .footer_logo_name{
+        font-size: 27px;
+    }
+    .footer_logo div span{
+        font-size: 15px;
+    }
+}
+
+
+
+
